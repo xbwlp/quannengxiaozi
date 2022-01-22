@@ -10,11 +10,19 @@
       >
     </view>
     <nut-toast :msg="msg" v-model:visible="show" :type="type" :cover="cover" />
+      <div>
+    <h1>个人中心</h1>
+    <h2>我预约的活动</h2>
+    <h2>我的评价</h2>
+    <button @click="go('/pages/my_login/my_login')">点击登录</button>
+    <button @click="go('/pages/my_register/my_register')">点击注册</button>
+  </div>
   </view>
 </template>
 
 <script>
 import { reactive, toRefs } from 'vue'
+import Taro from '@tarojs/taro'
 export default {
   name: 'Index',
   components: {},
@@ -33,10 +41,14 @@ export default {
       state.type = type
       state.cover = cover
     }
+    const go = (url) => {
+      Taro.navigateTo({url})
+    }
 
     return {
       ...toRefs(state),
-      handleClick
+      handleClick,
+      go
     }
   }
 }

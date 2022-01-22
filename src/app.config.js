@@ -1,5 +1,16 @@
 export default defineAppConfig({
-  pages: ['pages/index/index', 'pages/activity/index', 'pages/rights/index', 'pages/my/index'],
+  pages: ['pages/index/index', 'pages/activity/index', 'pages/rights/index', 'pages/my/index',
+  'pages/activity_bb/activity_bb',
+  'pages/activity_hh/activity_hh',
+  'pages/activity_sys/activity_sys',
+  'pages/activity_gic/activity_gic',
+  'pages/activity1/activity1',
+  'pages/activity2/activity2',
+  'pages/activity3/activity3',
+  'pages/activity_join/activity_join',
+  'pages/activity_join_form/activity_join_form',
+  'pages/my_login/my_login',
+  'pages/my_register/my_register'],
   tabBar: {
     custom: false,
     color: '#aaa',
