@@ -5,13 +5,15 @@
       
     </view>
 <view class="txt">品牌活动</view>
-<view class="header"></view>
+<view style="width:80px;margin:0 auto;" class="header"></view>
+<!-- 设置长度和居中这样配置style就行 -->
 <scroll-view class="box1" scroll-x>
   <view class="box1con">
    
- <button style="width: 260rpx;height: 130rpx;  border-radius: 50rpx;" 
+ <button
+ style="width: 260rpx;height: 130rpx;  border-radius: 50rpx;box-shadow: 1px 2px  1px #A9A9A9;"
   size='mini' type='warn' plain @click="go('/pages/activity_sys/activity_sys')">SYS·博雅学堂</button>
-   
+  <!-- 我在这里写了一个阴影box-shadow,不太清楚你在问题里说的按钮边框具体指哪些，文字位置设置就是text-align,我看你109行不是会写了吗 -->
   <button style="width: 260rpx;height: 130rpx;  border-radius: 50rpx;" 
   size='mini' type='warn' plain @click="go('/pages/activity_hh/activity_hh')">HH·佳片欣赏会</button>
    
