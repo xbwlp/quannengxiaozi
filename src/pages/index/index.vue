@@ -1,29 +1,24 @@
 <template>
   <div class="index">
-    <div>
-      <div class="content">
-        <div class="all tras" style="left: 0">
-          <div class="shopshow"><img src="img/activity-current.png" alt="" /></div>
-          <div class="shopshow"><img src="img/activity.png" alt="" /></div>
-          <div class="shopshow"><img src="img/home-current.png" alt="" /></div>
-          <div class="shopshow"><img src="img/me-current.png" alt="" /></div>
-          <div class="shopshow"><img src="img/me.png" alt="" /></div>
-          <div class="shopshow"><img src="img/rights-current.png" alt="" /></div>
-          <div class="shopshow"><img src="img/activity-current.png" alt="" /></div>
-        </div>
-        <div class="circle">
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-        <div class="btn">
-          <div></div>
-          <div>></div>
-        </div>
-      </div>
+    <div class="content">
+      <swiper
+        class="test-h"
+        indicator-color="#999"
+        indicator-active-color="#333"
+        :circular="true"
+        :indicator-dots="true"
+        :autoplay="true"
+      >
+        <swiper-item>
+          <img src="../../img/activity-current.png" alt="" />
+        </swiper-item>
+        <swiper-item>
+          <img src="../../img/home-current.png" alt="" />
+        </swiper-item>
+        <swiper-item>
+          <img src="../../img/me-current.png" alt="" />
+        </swiper-item>
+      </swiper>
     </div>
     {{ msg }}
     <div class="btn">
@@ -36,7 +31,7 @@
 </template>
 
 <script>
-import { reactive, toRefs } from 'vue'
+import { ref, reactive, toRefs } from 'vue'
 // var all = document.getElementsByClassName('all')[0]
 // var shopshow = document.getElementsByClassName('shopshow')
 // var content = document.getElementsByClassName('content')[0]
@@ -65,9 +60,13 @@ import { reactive, toRefs } from 'vue'
 //     addcolor()
 //   }, 500)
 // }
+import { Swiper, SwiperItem } from '@tarojs/components'
 export default {
   name: 'Index',
-
+  components: {
+    Swiper,
+    SwiperItem
+  },
   setup () {
     const state = reactive({
       msg: '欢迎使用 NutUI3.0 开发小程序',
@@ -83,8 +82,9 @@ export default {
       state.type = type
       state.cover = cover
     }
-
+    const page = ref(2)
     return {
+      page,
       ...toRefs(state),
       handleClick
     }
@@ -99,71 +99,20 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
 }
-* {
-  padding: 0;
-  margin: 0;
-}
-
 .content {
-  width: 400px;
   height: 300px;
-  margin: auto;
-  border: solid 1px gray;
-  overflow: hidden;
-  position: relative;
 }
-
-.all {
-  width: 2800px;
-  height: 300px;
-  position: absolute;
-}
-
-.shopshow {
-  width: 400px;
-  height: 300px;
-  float: left;
-}
-
-img {
-  width: 100%;
-  height: 100%;
-}
-
-.tras {
-  transition: left 0.5s ease-in;
-}
-
-.circle {
-  width: 120px;
-  height: 12px;
-  font-size: 0;
-  line-height: 12px;
-  position: absolute;
-  bottom: 20px;
-  left: 140px;
-}
-
-.circle > div {
-  border: solid 2px #fff;
-  border-radius: 50%;
-  width: 8px;
-  height: 8px;
-  display: inline-block;
-  margin: 0 4px;
-}
-
 .bgc {
   background-color: #fff;
 }
 
-.btn {
-  position: absolute;
-  width: 100%;
-  height: 30px;
-  top: 125px;
-  left: 0;
-}
+// .btn {
+//   position: absolute;
+//   width: 100%;
+//   height: 30px;
+//   top: 125px;
+//   left: 0;
+// }
 
 .btn > div:nth-child(1) {
   width: 30px;
