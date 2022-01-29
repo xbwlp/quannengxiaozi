@@ -3,13 +3,13 @@
     <div>
       <div class="content">
         <div class="all tras" style="left: 0">
-          <div class="shopshow"><img src="img/1.jpg" alt="" /></div>
-          <div class="shopshow"><img src="img/2.jpg" alt="" /></div>
-          <div class="shopshow"><img src="img/3.jpg" alt="" /></div>
-          <div class="shopshow"><img src="img/4.jpg" alt="" /></div>
-          <div class="shopshow"><img src="img/5.jpg" alt="" /></div>
-          <div class="shopshow"><img src="img/6.jpg" alt="" /></div>
-          <div class="shopshow"><img src="img/1.jpg" alt="" /></div>
+          <div class="shopshow"><img src="img/activity-current.png" alt="" /></div>
+          <div class="shopshow"><img src="img/activity.png" alt="" /></div>
+          <div class="shopshow"><img src="img/home-current.png" alt="" /></div>
+          <div class="shopshow"><img src="img/me-current.png" alt="" /></div>
+          <div class="shopshow"><img src="img/me.png" alt="" /></div>
+          <div class="shopshow"><img src="img/rights-current.png" alt="" /></div>
+          <div class="shopshow"><img src="img/activity-current.png" alt="" /></div>
         </div>
         <div class="circle">
           <div></div>
