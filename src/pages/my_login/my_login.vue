@@ -1,6 +1,11 @@
 <template>
-  <div>
-    <h1>登录</h1>
+  <div id="login">
+    <h1>登录界面</h1>
+    <form>
+      <input type = "text" required placeholder="请输入你的学号" class = "input">
+      <input type = "text" required placeholder="请输入你的密码" class = "input">
+      <button type = "submit">登录</button>
+    </form>
   </div>
 </template>
  
@@ -22,3 +27,13 @@ export default {
   }
 }
 </script>
+
+<style lang="scss">
+.input {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)
+}
+</style>
