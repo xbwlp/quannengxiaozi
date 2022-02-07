@@ -1,4 +1,9 @@
 <template>
+  <h1>
+  </h1>
+  <div id="tupian">
+    <img src="../../img/a.png">
+  </div>
   <div id="xingming">
     <form>
       <input type = "text" required placeholder="请输入姓名" class = "input">
@@ -64,5 +69,11 @@ div{
 }
 #yanzheng{
   margin-right:192px;
+}
+#tupian{ 
+  margin-top:58px;
+  margin-left:96px;
+  margin-right:97px;
+  margin-bottom:41px;
 }
 </style>
