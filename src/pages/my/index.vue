@@ -3,7 +3,7 @@
     <view>
       <img src="" alt="" />
     </view>
-    {{ msg }}
+    <h1 @click="go('../../pages/my_information/my_information')">self page</h1>
     <view class="btn">
       <nut-button type="primary" @click="handleClick('text', msg2, true)"
         >点我</nut-button

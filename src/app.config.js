@@ -10,7 +10,8 @@ export default defineAppConfig({
   'pages/activity_join/activity_join',
   'pages/activity_join_form/activity_join_form',
   'pages/my_login/my_login',
-  'pages/my_register/my_register'],
+  'pages/my_register/my_register',
+  'pages/my_information/my_information'],
   tabBar: {
     custom: false,
     color: '#aaa',
