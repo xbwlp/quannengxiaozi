@@ -16,13 +16,13 @@
         :autoplay="true"
       >
         <swiper-item>
-          <img src="../../img/activity-current.png" alt="" />
+          <img src="../../img/ai.png" alt="" />
         </swiper-item>
         <swiper-item>
-          <img src="../../img/home-current.png" alt="" />
+          <img src="../../img/dang.jpg" alt="" />
         </swiper-item>
         <swiper-item>
-          <img src="../../img/me-current.png" alt="" />
+          <img src="../../img/pic.jpg" alt="" />
         </swiper-item>
       </swiper>
       </a>
