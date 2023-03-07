@@ -16,13 +16,13 @@
         :autoplay="true"
       >
         <swiper-item>
-          <img src="../../img/ai.png" alt="" />
+          <img src="https://i0.hdslb.com/bfs/new_dyn/3a8990ffe2c0dd5ad6c74b0b5138135b77047564.jpg@1036w.webp" alt="" />
         </swiper-item>
         <swiper-item>
-          <img src="../../img/dang.jpg" alt="" />
+          <img src="https://tiebapic.baidu.com/forum/pic/item/8fa619d5ad6eddc4aa9b94327cdbb6fd53663349.jpg?tbpicau=2023-03-08-05_a491c85c656efea6e24d17aeebba58b2" alt="" />
         </swiper-item>
         <swiper-item>
-          <img src="../../img/pic.jpg" alt="" />
+          <img src="https://i0.hdslb.com/bfs/new_dyn/9a2fe0eea22daba7cc738f93feca6e7e77047564.jpg@1036w.webp" alt="" />
         </swiper-item>
       </swiper>
       </a>

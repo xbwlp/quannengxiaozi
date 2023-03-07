@@ -1,6 +1,6 @@
 <template>
   <div>
-    <image src="../../img/a.png" id="touxiang"></image>
+    <image src="https://i0.hdslb.com/bfs/new_dyn/85ceb4530aa2031c7f63c33880d6df1e77047564.jpg@1036w.webp" id="touxiang"></image>
     <p id="genghuan">更换头像</p>
     <p id="hengxian1"></p>
     <p id="xingming">姓名</p>

@@ -55,7 +55,7 @@ div{
   margin-right:97px;
   margin-bottom:41px;
   height:164px;
-  background-image: url("../../img/a.png") ;/*设置图片的地址*/
+  background-image: url("https://i0.hdslb.com/bfs/new_dyn/85ceb4530aa2031c7f63c33880d6df1e77047564.jpg@1036w.webp") ;/*设置图片的地址*/
   background-size:182px 164px;    /*这里是图片的大小*/
   background-repeat:no-repeat ;  /*让图片不重复*/
   background-position: 0px 0px;
